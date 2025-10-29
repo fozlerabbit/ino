@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>404 - Page Not Found | abdullahtitu.com</title>
+<meta name="description" content="The page you're looking for doesn't exist. Let's get you back on track.">
+<meta name="theme-color" content="#6366f1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%236366f1'/%3E%3Cpath d='M30 60 L50 30 L70 60' stroke='%23fff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+
+<style>
+/* ==================== Base & Variables ==================== */
+:root {
+  --bg: #fafbfd;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent-1: #6366f1;
+  --accent-2: #818cf8;
+  --glass: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(16, 24, 40, 0.06);
+  --text: #0f172a;
+  --radius: 14px;
+  --transition: 300ms cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: radial-gradient(1200px 600px at 10% 10%, rgba(99, 102, 241, 0.06), transparent),
+              linear-gradient(180deg, var(--bg), var(--bg));
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  padding: clamp(20px, 6vw, 48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==================== Container ==================== */
+.container {
+  width: 100%;
+  max-width: 720px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.35));
+  backdrop-filter: blur(8px) saturate(120%);
+  border-radius: var(--radius);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.08);
+  padding: clamp(32px, 6vw, 64px);
+  text-align: center;
+  transition: all var(--transition);
+}
+
+/* ==================== 404 Illustration ==================== */
+.illustration {
+  margin: 0 auto 32px auto;
+  max-width: 360px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* ==================== Typography ==================== */
+.code {
+  display: inline-block;
+  font-size: clamp(80px, 20vw, 120px);
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--accent-1) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+  animation: glitch 3s infinite;
+}
+
+@keyframes glitch {
+  0%, 90%, 100% {
+    transform: translate(0);
+  }
+  92% {
+    transform: translate(-2px, 2px);
+  }
+  94% {
+    transform: translate(2px, -2px);
+  }
+  96% {
+    transform: translate(-2px, -2px);
+  }
+}
+
+.title {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.description {
+  font-size: clamp(15px, 3vw, 18px);
+  color: var(--muted);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* ==================== Buttons ==================== */
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all var(--transition);
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
+.btn-secondary {
+  background: var(--glass);
+  color: var(--text);
+  border: 1px solid var(--glass-border);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================== Suggestions ==================== */
+.suggestions {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+}
+
+.suggestions h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.suggestions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions li {
+  margin-bottom: 12px;
+}
+
+.suggestions li:last-child {
+  margin-bottom: 0;
+}
+
+.suggestions a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  transition: all var(--transition);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.suggestions a:hover {
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(4px);
+}
+
+.suggestions svg {
+  flex-shrink: 0;
+  color: var(--accent-1);
+}
+
+/* ==================== Footer ==================== */
+.footer {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--glass-border);
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.footer a {
+  color: var(--accent-1);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 640px) {
+  body {
+    padding: 16px;
+  }
+  
+  .container {
+    padding: 24px;
+  }
+  
+  .code {
+    font-size: 64px;
+    margin-bottom: 12px;
+  }
+  
+  .illustration {
+    margin-bottom: 24px;
+    max-width: 280px;
+  }
+  
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .suggestions {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  
+  .code {
+    font-size: 56px;
+  }
+  
+  .suggestions {
+    padding: 16px;
+  }
+  
+  .suggestions h3 {
+    font-size: 15px;
+  }
+}
+</style>
+</head>
+<body>
+  <main class="container" role="main">
+    <!-- 404 Illustration -->
+    <div class="illustration">
+      <svg viewBox="0 0 400 300" width="100%" height="auto" role="img" aria-label="404 error illustration">
+        <defs>
+          <linearGradient id="grad404" x1="0" x2="1">
+            <stop offset="0" stop-color="#6366f1"/>
+            <stop offset="1" stop-color="#818cf8"/>
+          </linearGradient>
+        </defs>
+        
+        <!-- Astronaut floating in space -->
+        <g transform="translate(200,150)">
+          <!-- Stars -->
+          <circle cx="-120" cy="-80" r="2" fill="#818cf8" opacity="0.6">
+            <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="100" cy="-60" r="2" fill="#818cf8" opacity="0.6">
+            <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="-80" cy="60" r="2" fill="#818cf8" opacity="0.6">
+            <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+          </circle>
+          <circle cx="110" cy="70" r="2" fill="#818cf8" opacity="0.6">
+            <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+          </circle>
+          
+          <!-- Astronaut -->
+          <g transform="rotate(-15)">
+            <animateTransform 
+              attributeName="transform" 
+              type="rotate" 
+              from="-15" 
+              to="15" 
+              dur="4s" 
+              repeatCount="indefinite"
+              additive="sum"
+            />
+            
+            <!-- Helmet -->
+            <circle cx="0" cy="-20" r="28" fill="url(#grad404)" opacity="0.9"/>
+            <circle cx="0" cy="-20" r="22" fill="rgba(255,255,255,0.3)"/>
+            
+            <!-- Visor reflection -->
+            <ellipse cx="-8" cy="-25" rx="10" ry="8" fill="rgba(255,255,255,0.6)" opacity="0.7"/>
+            
+            <!-- Body -->
+            <rect x="-18" y="8" width="36" height="45" rx="8" fill="url(#grad404)" opacity="0.9"/>
+            
+            <!-- Arms -->
+            <rect x="-28" y="15" width="10" height="30" rx="5" fill="url(#grad404)" opacity="0.8">
+              <animateTransform 
+                attributeName="transform" 
+                type="rotate" 
+                from="0 -23 30" 
+                to="-20 -23 30" 
+                dur="2s" 
+                repeatCount="indefinite"
+              />
+            </rect>
+            <rect x="18" y="15" width="10" height="30" rx="5" fill="url(#grad404)" opacity="0.8">
+              <animateTransform 
+                attributeName="transform" 
+                type="rotate" 
+                from="0 23 30" 
+                to="20 23 30" 
+                dur="2s" 
+                repeatCount="indefinite"
+              />
+            </rect>
+            
+            <!-- Legs -->
+            <rect x="-14" y="53" width="12" height="28" rx="6" fill="url(#grad404)" opacity="0.8"/>
+            <rect x="2" y="53" width="12" height="28" rx="6" fill="url(#grad404)" opacity="0.8"/>
+            
+            <!-- Boots -->
+            <ellipse cx="-8" cy="82" rx="7" ry="4" fill="#0f172a" opacity="0.8"/>
+            <ellipse cx="8" cy="82" rx="7" ry="4" fill="#0f172a" opacity="0.8"/>
+          </g>
+          
+          <!-- Question mark bubble -->
+          <g transform="translate(45,-40)">
+            <circle cx="0" cy="0" r="18" fill="rgba(255,255,255,0.9)" stroke="url(#grad404)" stroke-width="2"/>
+            <text x="0" y="8" text-anchor="middle" font-size="24" font-weight="700" fill="#6366f1">?</text>
+            <animate attributeName="opacity" values="0;1;1;1" dur="1s" fill="freeze"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Error Code -->
+    <div class="code" aria-hidden="true">404</div>
+    
+    <!-- Title & Description -->
+    <h1 class="title">Page Not Found</h1>
+    <p class="description">
+      Oops! It looks like you've drifted into uncharted space. The page you're looking for doesn't exist or has been moved.
+    </p>
+
+    <!-- Action Buttons -->
+    <div class="actions">
+      <a href="/" class="btn btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+        Go Home
+      </a>
+      <button onclick="history.back()" class="btn btn-secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"/>
+          <polyline points="12 19 5 12 12 5"/>
+        </svg>
+        Go Back
+      </button>
+    </div>
+
+    <!-- Helpful Links -->
+    <div class="suggestions">
+      <h3>Helpful Links</h3>
+      <ul>
+        <li>
+          <a href="/">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            </svg>
+            Homepage
+          </a>
+        </li>
+        <li>
+          <a href="mailto:infiniterabbiex@gmail.com">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Contact Support
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© <span id="year"></span> abdullahtitu.com — <a href="/">Return to homepage</a></p>
+    </div>
+  </main>
+
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
