@@ -1,0 +1,159 @@
+<!-- ================================== -->
+<!-- join/index.html -->
+<!-- ================================== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Chuadanga Science & Robotics Club - Become part of the innovation community">
+    <title>Join Us - Chuadanga Science & Robotics Club</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Member information sourced from: club overall report - Copy (1).pdf -->
+    <div id="navbar-container"></div>
+
+    <section class="page-banner">
+        <img src="../assets/images/banner-join.jpg" alt="Students and members collaborating on robotics projects in workshop setting" loading="eager">
+        <div class="banner-overlay">
+            <h1>Join Our Community</h1>
+        </div>
+    </section>
+
+    <div class="container join-container">
+        <!-- Membership Form -->
+        <div class="form-section">
+            <h2>Become a Member</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Fill out the form below to join our community of innovators, problem-solvers, and future leaders.</p>
+            
+            <form id="membership-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="role">Interested Role *</label>
+                    <select id="role" name="role" required aria-required="true">
+                        <option value="">Select a role</option>
+                        <option value="student">Student Member</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="mentor">Mentor</option>
+                        <option value="sponsor">Sponsor/Partner</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="institution">School/Institution</label>
+                    <input type="text" id="institution" name="institution">
+                </div>
+                
+                <div class="form-group">
+                    <label for="bio">Tell Us About Yourself *</label>
+                    <textarea id="bio" name="bio" rows="4" required aria-required="true" placeholder="Share your interests, skills, and why you want to join..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="photo">Profile Photo (Optional)</label>
+                    <input type="file" id="photo" name="photo" accept="image/*">
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+            
+            <div id="success-message" class="success-message">
+                <strong>Application Submitted Successfully!</strong>
+                <p>Thank you for your interest. We'll contact you soon with next steps.</p>
+            </div>
+        </div>
+
+        <!-- Current Members Gallery -->
+        <div class="members-section">
+            <h2>Our Members</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Meet the talented individuals driving innovation forward.</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Members</button>
+                <button class="filter-btn" data-filter="leadership">Leadership</button>
+                <button class="filter-btn" data-filter="moderator">Moderators</button>
+                <button class="filter-btn" data-filter="executive">Executives</button>
+            </div>
+            
+            <div class="members-grid">
+                <div class="member-item" data-role="leadership">
+                    <img src="../assets/images/member1.jpg" alt="Md. Zahid Hasan Zihad - Founder" loading="lazy" srcset="../assets/images/member1.jpg 1x, ../assets/images/member1@2x.jpg 2x">
+                    <h4>Md. Zahid Hasan Zihad</h4>
+                    <p class="member-role">Founder</p>
+                    <p class="member-bio">Visionary leader driving STEM education and innovation</p>
+                </div>
+                
+                <div class="member-item" data-role="leadership">
+                    <img src="../assets/images/member2.jpg" alt="Mehrab Hossain - Co-Founder" loading="lazy" srcset="../assets/images/member2.jpg 1x, ../assets/images/member2@2x.jpg 2x">
+                    <h4>Mehrab Hossain</h4>
+                    <p class="member-role">Co-Founder</p>
+                    <p class="member-bio">Supporting robotics innovation and outreach programs</p>
+                </div>
+                
+                <div class="member-item" data-role="leadership">
+                    <img src="../assets/images/member3.jpg" alt="Md. Shariful Alam Milton - President" loading="lazy" srcset="../assets/images/member3.jpg 1x, ../assets/images/member3@2x.jpg 2x">
+                    <h4>Md. Shariful Alam Milton</h4>
+                    <p class="member-role">President</p>
+                    <p class="member-bio">Professor of Chemistry leading organizational excellence</p>
+                </div>
+                
+                <div class="member-item" data-role="leadership">
+                    <img src="../assets/images/member4.jpg" alt="M.M. Asaduzzaman Sabbir - Vice President" loading="lazy" srcset="../assets/images/member4.jpg 1x, ../assets/images/member4@2x.jpg 2x">
+                    <h4>M.M. Asaduzzaman Sabbir</h4>
+                    <p class="member-role">Vice President</p>
+                    <p class="member-bio">Coordinating academic programs and competitions</p>
+                </div>
+                
+                <div class="member-item" data-role="leadership">
+                    <img src="../assets/images/member5.jpg" alt="Md. Shapon Ali - General Secretary" loading="lazy" srcset="../assets/images/member5.jpg 1x, ../assets/images/member5@2x.jpg 2x">
+                    <h4>Md. Shapon Ali</h4>
+                    <p class="member-role">General Secretary</p>
+                    <p class="member-bio">Managing operations and community initiatives</p>
+                </div>
+                
+                <div class="member-item" data-role="leadership">
+                    <img src="../assets/images/member6.jpg" alt="Mujbitul Islam Sifat - Treasurer" loading="lazy" srcset="../assets/images/member6.jpg 1x, ../assets/images/member6@2x.jpg 2x">
+                    <h4>Mujbitul Islam Sifat</h4>
+                    <p class="member-role">Treasurer</p>
+                    <p class="member-bio">Overseeing financial planning and resources</p>
+                </div>
+                
+                <div class="member-item" data-role="leadership">
+                    <img src="../assets/images/member7.jpg" alt="Mohammad Hasibul Hasan - Social Media Manager" loading="lazy" srcset="../assets/images/member7.jpg 1x, ../assets/images/member7@2x.jpg 2x">
+                    <h4>Mohammad Hasibul Hasan</h4>
+                    <p class="member-role">Social Media Manager</p>
+                    <p class="member-bio">Building our online presence and community</p>
+                </div>
+                
+                <div class="member-item" data-role="leadership">
+                    <img src="../assets/images/member8.jpg" alt="Rashed Hasan - Event Manager" loading="lazy" srcset="../assets/images/member8.jpg 1x, ../assets/images/member8@2x.jpg 2x">
+                    <h4>Rashed Hasan</h4>
+                    <p class="member-role">Event Manager</p>
+                    <p class="member-bio">Organizing workshops and community events</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

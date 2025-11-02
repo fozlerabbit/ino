@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore innovative robotics projects by Chuadanga Science & Robotics Club including Hexaguard Rover, Medical Booth, and AI Booth">
+    <title>Projects - Chuadanga Science & Robotics Club</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Project details sourced from: club overall report - Copy (1).pdf -->
+    <div id="navbar-container"></div>
+
+    <section class="page-banner">
+        <img src="../assets/images/banner-projects.jpg" alt="Showcase of innovative robotics projects including Hexaguard Rover and AI-powered systems" loading="eager">
+        <div class="banner-overlay">
+            <h1>Our Innovation Projects</h1>
+        </div>
+    </section>
+
+    <section class="container projects-intro">
+        <p class="intro-text">At Chuadanga Science & Robotics Club, innovation is at the heart of everything we do. Our members collaborate to design and develop real-world problem-solving projects that combine creativity, coding, and engineering to make technology useful for humanity.</p>
+    </section>
+
+    <section class="container projects-list">
+        <!-- Hexaguard Rover -->
+        <div class="project-card-large">
+            <div class="project-image">
+                <img src="../assets/images/project-hexaguard.jpg" alt="Hexaguard Rover - Multi-functional robotic rover with 6-DOF arm for hazardous operations" loading="lazy">
+            </div>
+            <div class="project-details">
+                <h2>Hexaguard Rover</h2>
+                <p class="project-tagline">Military-Grade Multi-Functional Robotic Rover</p>
+                <p>A sophisticated robotic rover designed to perform dangerous tasks remotely, reducing human risk in hazardous environments. This innovation showcases advanced engineering and practical problem-solving capabilities.</p>
+                
+                <div class="tech-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>6-DOF all-metal robotic arm with precision control</li>
+                        <li>High-quality live video transmission system</li>
+                        <li>Multi-sensor data monitoring and analysis</li>
+                        <li>Signal jamming and interference protection</li>
+                        <li>Water-pumping and fire-extinguishing modules</li>
+                        <li>Injectable sedative/immobilizing system for wildlife</li>
+                        <li>Dual-camera setup with night-vision capability</li>
+                        <li>Two-way audio communication system</li>
+                        <li>Remote control via FlySky FS-i6X and custom app</li>
+                        <li>ESP32-based web dashboard for real-time monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="use-cases">
+                    <h4>Applications:</h4>
+                    <p>Bomb detection and defusal, firefighting, military reconnaissance, wildlife sedation, disaster response, gas leak monitoring, and smart security surveillance.</p>
+                </div>
+
+                <div class="project-achievements">
+                    <p><strong>Achievements:</strong> Gold Medal at WICE 2025 International (Malaysia), Silver Medal & "Dreams of Bangladesh" Award at WICE 2025 National, Featured at 2nd Ismail Al-Jazari Science Fest 2025</p>
+                </div>
+
+                <button class="btn-secondary" onclick="toggleModal('hexaguard-modal')">View Full Details</button>
+                <p class="source-citation"><small>Source: Club Overall Report - Major Projects Section</small></p>
+            </div>
+        </div>
+
+        <!-- Medical Booth -->
+        <div class="project-card-large">
+            <div class="project-image">
+                <img src="../assets/images/project-medical-booth.jpg" alt="Medical Booth - Smart healthcare kiosk providing remote medical services" loading="lazy">
+            </div>
+            <div class="project-details">
+                <h2>Medical Booth</h2>
+                <p class="project-tagline">Smart Healthcare Access for Rural Communities</p>
+                <p>An innovative medical information and service booth designed to bridge the healthcare gap in rural and underserved areas, making basic medical services accessible to everyone.</p>
+                
+                <div class="tech-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Sensor-based health data monitoring</li>
+                        <li>Digital report display and record keeping</li>
+                        <li>Telemedicine connection capabilities</li>
+                        <li>Automated first-aid guidance system</li>
+                        <li>IoT-enabled remote doctor consultation</li>
+                        <li>Vital signs measurement (temperature, pulse, blood pressure)</li>
+                    </ul>
+                </div>
+
+                <div class="use-cases">
+                    <h4>Impact:</h4>
+                    <p>Enables people in remote areas to check vital health data and connect with medical professionals without immediate doctor presence, revolutionizing rural healthcare accessibility. Particularly valuable in emergency situations and for routine health monitoring.</p>
+                </div>
+
+                <button class="btn-secondary" onclick="toggleModal('medical-modal')">View Full Details</button>
+                <p class="source-citation"><small>Source: Club Overall Report - Major Projects Section</small></p>
+            </div>
+        </div>
+
+        <!-- AI Booth -->
+        <div class="project-card-large">
+            <div class="project-image">
+                <img src="../assets/images/project-ai-booth.jpg" alt="AI Booth - Digital information hub with voice interaction in Bengali" loading="lazy">
+            </div>
+            <div class="project-details">
+                <h2>AI Booth</h2>
+                <p class="project-tagline">AI-Powered Digital Information Hub</p>
+                <p>A revolutionary digital information hub powered by artificial intelligence, designed to help people access knowledge, government services, and educational resources in their own language.</p>
+                
+                <div class="tech-features">
+                    <h4>Key Features:</h4>
+                    <ul>
+                        <li>Voice interaction in Bangla language</li>
+                        <li>AI-based question answering system</li>
+                        <li>Integration with online public databases</li>
+                        <li>Educational resource accessibility</li>
+                        <li>Government service information portal</li>
+                        <li>Digital literacy training modules</li>
+                    </ul>
+                </div>
+
+                <div class="use-cases">
+                    <h4>Impact:</h4>
+                    <p>Empowers students and rural communities with digital literacy, closing the information gap between urban and rural areas through accessible technology. Helps citizens navigate government services and access educational content in their native language.</p>
+                </div>
+
+                <button class="btn-secondary" onclick="toggleModal('ai-modal')">View Full Details</button>
+                <p class="source-citation"><small>Source: Club Overall Report - Major Projects Section</small></p>
+            </div>
+        </div>
+
+        <!-- Additional Projects Overview -->
+        <div class="content-block" style="margin-top: 4rem;">
+            <h2 style="text-align: center; color: var(--emerald); margin-bottom: 2rem;">Other Innovative Projects</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Herbal Mosquito Repellent Humidifier</h3>
+                        <p>An AI-assisted herbal mosquito control device with humidifying benefits - a research-based project combining natural pest control with air quality improvement.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Smart Herbal Moisture System</h3>
+                        <p>An AI-powered system designed to monitor and maintain optimal soil moisture levels for agricultural applications using sustainable methods.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Train Security System</h3>
+                        <p>An automated railway accident prevention and safety monitoring system designed to enhance passenger safety and prevent incidents.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Humanoid Robot</h3>
+                        <p>An AI-integrated humanoid robot developed for natural human interaction, educational demonstrations, and research purposes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for detailed project information -->
+    <div id="hexaguard-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal('hexaguard-modal')">&times;</span>
+            <h2>Hexaguard Rover - Complete Documentation</h2>
+            <p>View the complete project documentation and technical specifications:</p>
+            <a href="https://drive.google.com/file/d/1eEGQU8eJZM_GDuj4hb0n2_fZba4tajBw/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-primary">View Project Report</a>
+            <p class="modal-description">This comprehensive report includes detailed technical specifications, development process, testing results, and future enhancement plans for the Hexaguard Rover project. Learn about the engineering challenges overcome and the innovative solutions implemented.</p>
+        </div>
+    </div>
+
+    <div id="medical-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal('medical-modal')">&times;</span>
+            <h2>Medical Booth - Complete Documentation</h2>
+            <p>Explore the full project documentation for our Medical Booth initiative:</p>
+            <p class="modal-description">Access detailed information about the Medical Booth system architecture, sensor integration, healthcare impact analysis, and deployment strategies for rural communities. This project demonstrates how technology can bridge healthcare accessibility gaps.</p>
+            <p style="margin-top: 1.5rem;"><em>Full documentation available upon request at roboticsclubchuadanga@gmail.com</em></p>
+        </div>
+    </div>
+
+    <div id="ai-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleModal('ai-modal')">&times;</span>
+            <h2>AI Booth - Complete Documentation</h2>
+            <p>Read the complete project documentation for the AI Booth:</p>
+            <p class="modal-description">Learn about the AI implementation, natural language processing capabilities in Bangla, database integration, and the community impact of the AI Booth initiative. Discover how this project is democratizing access to information and government services.</p>
+            <p style="margin-top: 1.5rem;"><em>Full documentation available upon request at roboticsclubchuadanga@gmail.com</em></p>
+        </div>
+    </div>
+
+    <div id="footer-container"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
